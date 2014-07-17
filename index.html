@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="http://angularjs.org/css/bootstrap.min.css"/>
+    <style>
+        html img{ width: 200px; height: 150px; }
+    </style>
+    <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="src/app.js"></script>
+</head>
+<body data-ng-app="MiCarrito">
+<div>
+    <div class="well container-fluid">
+        <h1>Tienda Fantastica</h1>
+        <div ng-view=""></div>
+    </div>
+</div>
+</body>
+</html>

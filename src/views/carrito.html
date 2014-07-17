@@ -1,0 +1,27 @@
+<div>
+    <h3>Carrito</h3>
+    <a href="#/producto">Ir al listado</a><br/>
+    <table class="table table-striped">
+        <caption>Carrito</caption>
+        <thead>
+        <tr>
+            <th class="span1">Id</th>
+            <th class="span5">Producto</th>
+            <th class="span2">Cantidad</th>
+            <th class="span2">Precio</th>
+            <th class="span2">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="well" ng-repeat="item in carrito">
+            <td>{{item.Id}}</td>
+            <td>{{item.Producto}}</td>
+            <td>
+                <input type="text" name="cantidad" ng-model="item.Cantidad" />
+            </td>
+            <td>{{item.Precio }}</td>
+            <td>{{item.Cantidad * item.Precio }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
